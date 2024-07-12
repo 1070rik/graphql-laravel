@@ -122,6 +122,7 @@ GRAQPHQL;
                 UserUpdateMutation::class,
             ],
             'types' => [
+                ContractInput::class,
                 UserInput::class,
             ],
         ]);

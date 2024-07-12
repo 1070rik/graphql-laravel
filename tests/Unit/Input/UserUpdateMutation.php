@@ -25,10 +25,11 @@ class UserUpdateMutation extends Mutation
             'data' => [
                 'name' => 'data',
                 'type' => Type::listOf(GraphQL::type('UserInput')),
-                'rules' => [
-                    'required',
-                ],
             ],
+            'contract' => [
+                'name' => 'contract',
+                'type' => GraphQL::type('ContractInput'),
+            ]
         ];
     }
 
